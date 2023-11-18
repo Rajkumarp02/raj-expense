@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 //create Api
-const API = axios.create({baseURL:"http://localhost:8000"})
+const API = axios.create({baseURL:"https://expense-zq04.onrender.com"})
 
 API.interceptors.request.use((req) => {
     if (localStorage.getItem("profile")) {
