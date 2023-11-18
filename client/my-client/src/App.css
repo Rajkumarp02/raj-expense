@@ -1,0 +1,41 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+   }
+
+.chart .title{
+    position: absolute;
+    left:0;
+    right: 0;
+    top: 44%;
+    margin-left:44%;
+    margin-right: auto;
+
+}
+
+.canvasjs-chart-credit
+{
+    display: none !important;
+}
+
+.labels{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.tableContainer{
+    margin-top: 10%;
+}
+
+
+.modal-body .container form{
+    width:100%;
+}
+
+.cancel{
+    margin-top: 5%;
+}
+

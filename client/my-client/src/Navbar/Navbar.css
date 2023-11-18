@@ -1,0 +1,22 @@
+.signin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background:none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid rgb(245, 245, 245);
+    border-radius: 3px;
+    padding: 0 10px;
+}
+
+.nav-item .nav-link{
+    color: white;
+   }
+
+.navbar-brand {
+  font-size: 30px;
+ }
+ 
