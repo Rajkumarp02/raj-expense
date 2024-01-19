@@ -3,6 +3,7 @@ import CanvasJSReact from '@canvasjs/react-charts';
 import { useDispatch, useSelector } from 'react-redux';
 import Jspdf from './Jspdf';
 import { getTotalcategory } from '../Action/expense';
+import {Helmet} from 'react-helmet'
 
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
@@ -63,6 +64,9 @@ export default function ReportPage() {
     }
     return (
         <div className='mt-5 container'>
+          <Helmet>
+                <title>Report Page</title>
+            </Helmet>
             <div>
                 <CanvasJSChart options={options} />
             </div>
