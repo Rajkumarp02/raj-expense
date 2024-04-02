@@ -39,7 +39,7 @@ app.get('/',  ((req,res) => {
 }))
 
 
-const connect_url =process.env.MONGODB_CONNECT;
+const connect_url ="mongodb+srv://raja:rajahb12@mern.y6wyg8l.mongodb.net/?retryWrites=true&w=majority";
 mongoose.connect(connect_url,{useNewUrlParser:true, useUnifiedTopology:true})
 .then(() => app.listen(8000, () => {
       console.log("success")

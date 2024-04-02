@@ -3,7 +3,8 @@ import CanvasJSReact from '@canvasjs/react-charts';
 import { useDispatch, useSelector } from 'react-redux';
 import Jspdf from './Jspdf';
 import { getTotalcategory } from '../Action/expense';
-import {Helmet} from 'react-helmet'
+//import {Helmet} from 'react-helmet'
+import Layout from './Layout';
 
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
@@ -63,10 +64,14 @@ export default function ReportPage() {
         }]
     }
     return (
+        <Layout pageTitle="Report Page">
         <div className='mt-5 container'>
-          <Helmet>
+         {/*  <Helmet>
+
                 <title>Report Page</title>
-            </Helmet>
+                <meta property='og:title' content='Report Page'></meta>
+                <meta property='og:description' content='Report Page in my app'></meta>
+            </Helmet> */}
             <div>
                 <CanvasJSChart options={options} />
             </div>
@@ -94,6 +99,7 @@ export default function ReportPage() {
             </table>
             <Jspdf data={total} />
         </div>
+        </Layout>
     );
 }
 
